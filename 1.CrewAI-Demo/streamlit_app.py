@@ -90,7 +90,7 @@ def generate_content(topic):
 
     # Research Task
     research_task = Task(
-        description=("""
+        description = ("""
             1. Conduct comprehensive research on {topic} including:
                 - Recent developments and news
                 - Key industry trends and innovations
@@ -100,7 +100,7 @@ def generate_content(topic):
             3. Organize findings into a structured research brief
             4. Include all relevant citations and sources
         """),
-        expected_output="""A detailed research report containing:
+        expected_output = """A detailed research report containing:
             - Executive summary of key findings
             - Comprehensive analysis of current trends and developments
             - List of verified facts and statistics
@@ -112,7 +112,7 @@ def generate_content(topic):
 
     # Writing Task
     writing_task = Task(
-        description=("""
+        description = ("""
             Using the research brief provided, create an engaging blog post that:
             1. Transforms technical information into accessible content
             2. Maintains all factual accuracy and citations from the research
@@ -123,20 +123,20 @@ def generate_content(topic):
             4. Preserves all source citations in [Source: URL] format
             5. Includes a References section at the end
         """),
-        expected_output="""A polished blog post in markdown format that:
+        expected_output = """A polished blog post in markdown format that:
             - Engages readers while maintaining accuracy
             - Contains properly structured sections
             - Includes Inline citations hyperlinked to the original source url
             - Presents information in an accessible yet informative way
             - Follows proper markdown formatting, use H1 for the title and H3 for the sub-sections""",
-        agent=content_writer
+        agent = content_writer
     )
 
     # Create Crew
     crew = Crew(
-        agents=[senior_research_analyst, content_writer],
-        tasks=[research_task, writing_task],
-        verbose=True
+        agents = [senior_research_analyst, content_writer],
+        tasks = [research_task, writing_task],
+        verbose = True
     )
 
     return crew.kickoff(inputs={"topic": topic})
