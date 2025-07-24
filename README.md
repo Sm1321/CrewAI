@@ -21,11 +21,18 @@ CrewAI's architecture is built on a few core, intuitive components that work tog
 * **Tasks**:
    - These are the specific assignments given to agents.
    - Each task has a clear **description** of what needs to be done and an **expected output**.
-* **Tools**: To perform their tasks, agents are equipped with tools. These can include functions like web searching, running code, accessing databases, or interacting with APIs. CrewAI provides a library of pre-built tools and allows for the creation of custom ones.
-* **Crews**: A crew is the team of agents assembled to work on a set of tasks. The crew manages the workflow and ensures the agents collaborate to achieve the final objective.
-* **Process**: This is the workflow management system that dictates how agents collaborate. CrewAI supports two main processes:
-    * **Sequential**: Tasks are executed one after another in a predefined order.
-    * **Hierarchical**: A manager agent coordinates the crew, delegating tasks to other agents and validating the results before moving forward.
+* **Tools**:
+   - To perform their tasks, agents are equipped with tools.
+   - These can include functions like web searching, running code, accessing databases, or interacting with APIs.
+   - CrewAI provides a library of pre-built tools and allows for the creation of custom ones.
+* **Crews**:
+   - A crew is the team of agents assembled to work on a set of tasks.
+   - The crew manages the workflow and ensures the agents collaborate to achieve the final objective.
+* **Process**:
+   - This is the workflow management system that dictates how agents collaborate.
+   - CrewAI supports two main processes:
+    * `**Sequential**`: Tasks are executed one after another in a predefined order.
+    * `**Hierarchical**`: A manager agent coordinates the crew, delegating tasks to other agents and validating the results before moving forward.
 
 ---
 
@@ -33,11 +40,16 @@ CrewAI's architecture is built on a few core, intuitive components that work tog
 
 CrewAI is versatile and can be applied to a wide range of applications. Here are some common use cases:
 
-* **Content Creation**: Automate the generation of articles, reports, and social media posts with a crew of specialized writer, editor, and researcher agents.
-* **Financial Analysis**: Use agents to gather market data, analyze company performance, and track economic trends to produce detailed investment reports.
-* **Customer Support Automation**: Develop a crew that can handle customer inquiries, troubleshoot issues, and escalate complex problems to human agents.
-* **Software Development**: Assist developers with tasks like writing code, debugging, creating documentation, and automating testing processes.
-* **Travel Planning**: A crew can act as a personal travel agent, finding the best flights, accommodations, and creating a detailed itinerary based on user preferences.
+* **Content Creation**:
+   - Automate the generation of articles, reports, and social media posts with a crew of specialized writer, editor, and researcher agents.
+* **Financial Analysis**:
+   - Use agents to gather market data, analyze company performance, and track economic trends to produce detailed investment reports.
+* **Customer Support Automation**:
+   - Develop a crew that can handle customer inquiries, troubleshoot issues, and escalate complex problems to human agents.
+* **Software Development**:
+   - Assist developers with tasks like writing code, debugging, creating documentation, and automating testing processes.
+* **Travel Planning**:
+   - A crew can act as a personal travel agent, finding the best flights, accommodations, and creating a detailed itinerary based on user preferences.
 
 ---
 
