@@ -31,8 +31,10 @@ CrewAI's architecture is built on a few core, intuitive components that work tog
 * **Process**:
    - This is the workflow management system that dictates how agents collaborate.
    - CrewAI supports two main processes:
-    * `Sequential`: Tasks are executed one after another in a predefined order.
-    * `Hierarchical`: A manager agent coordinates the crew, delegating tasks to other agents and validating the results before moving forward.
+    * `Sequential`:
+       - Tasks are executed one after another in a predefined order.
+    * `Hierarchical`:
+       - A manager agent coordinates the crew, delegating tasks to other agents and validating the results before moving forward.
 
 ---
 
